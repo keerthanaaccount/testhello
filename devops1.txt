@@ -61,3 +61,4 @@ yum install java-1.8*
    24  yum install fontconfig java-17-openjdk
    25  $ sudo dnf search openjdk | grep latest | cut -f1 -d':'
    26  history
+   27  git log
