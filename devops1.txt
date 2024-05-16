@@ -1,0 +1,63 @@
+#l /bin/sh
+yum update -y
+yum install docker -y
+service docker start
+docker pull ngnix:alpine
+docker run -it -d --name my-first-container -p 80:80 ngnix:alpine
+
+
+
+Command to see in shich directory java is installed
+$(dirname $(dirname $(readlink -f $(which javac)))) $(dirname $(dirname $(readlink -f $(which javac))))
+directory :  /usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64:
+
+
+
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# user specific environment and startup programes
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64
+PATH=$PATH:$HOME/bin:$JAVA_HOME
+
+
+export PATH
+
+
+to download jenkins
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+
+
+***********************************************************************************************************************************
+yum install java-1.8*
+    2  $(dirname $(dirname $(readlink -f $(which javac))))
+    3  $(dirname $(dirname $(readlink -f $(which javac)))) $(dirname $(dirname $(readlink -f $(which javac))))
+    4  vi .bash_Profile
+    5  echo $JAVA_HOME
+    6  exit
+    7  echo $JAVA_HOME
+    8  exit
+    9  echo $JAVA_HOME
+   10  vi .bash_Profile
+   11  echo $JAVA_HOME
+   12  exit
+   13  echo $JAVA_HOME
+   14  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   15  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+   16  yum install jenkins
+   17  service jenkins status
+   18  service jenkins start
+   19  systemctl status jenkins.service
+   20  service jenkins start
+   21  systemctl start jenkins.service
+   22  service jenkins start
+   23  journalctl -xeu jenkins.service
+   24  yum install fontconfig java-17-openjdk
+   25  $ sudo dnf search openjdk | grep latest | cut -f1 -d':'
+   26  history
